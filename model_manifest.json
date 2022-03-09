@@ -2,7 +2,7 @@
   "required_files": [
     {
       "name": "cifar10",
-      "source_uri": "data://algorithmia_admin/cifar10_models/cifar10-537afe24-f027-41c2-a320-7ed894d877ab.t7",
+      "source_uri": "data://algorithmia_admin/cifar10_models/cifar10-ec252201-1552-4f15-8a21-3be98c9d4a28.t7",
       "fail_on_tamper": true,
       "metadata": {
         "dataset_md5_checksum": "8832592dafff8c2e940e83d54099590aaa35b5f8"
