@@ -1,7 +1,12 @@
 [
   {
-    "case_name": "dog test",
-    "input": {"input": "data://algorithmia_admin/DeepFashion_1/willow_example.jpeg"},
-    "expected_output": {"class": "dog"}
+    "case_name": "truck test",
+    "input": {"input": "data://algorithmia_admin/data/truck.jpeg"},
+    "expected_output": [{"class": "truck"}]
+  },
+  {
+    "case_name": "fails with gif images",
+    "input": {"input":  "data://algorithmia_admin/data/eye_example.gif"},
+    "type": "EXCEPTION"
   }
 ]
