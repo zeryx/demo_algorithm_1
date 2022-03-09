@@ -1,0 +1,7 @@
+[
+  {
+    "case_name": "dog test",
+    "input": {"input": "data://algorithmia_admin/DeepFashion_1/willow_example.jpeg"},
+    "expected_output": {"class": "dog"}
+  }
+]
