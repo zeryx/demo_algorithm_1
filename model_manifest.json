@@ -1,7 +1,13 @@
 {
- "required_files": [{
-   "name": "cifar10",
-   "source_uri": "data://algorithmia_admin/cifar10_models/cifar10-ec252201-1552-4f15-8a21-3be98c9d4a28.t7"
-  }],
- "optional_files": []
+  "required_files": [
+    {
+      "name": "cifar10",
+      "source_uri": "data://algorithmia_admin/cifar10_models/cifar10-ec252201-1552-4f15-8a21-3be98c9d4a28.t7",
+      "metadata": {
+        "dataset_md5_checksum": "8832592dafff8c2e940e83d54099590aaa35b5f8"
+      },
+      "date_modified": "1640192758.7965493"
+    }
+  ],
+  "optional_files": []
 }

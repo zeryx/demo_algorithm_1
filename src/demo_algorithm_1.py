@@ -5,7 +5,7 @@ from torchvision import transforms
 import numpy as np
 
 def process_image(image_url, client):
-    local_image = client.file(image_url).getFile().name
+    local_image = client.file(image_url).getFile(as_path=True)
     transform = transforms.Compose(
         [transforms.ToTensor(),
          transforms.CenterCrop(32),
@@ -38,10 +38,10 @@ def apply(input, state):
     image_data = process_image(input['input'], state.client)
     preds = state['model'](image_data)
     _, predicted = th.max(preds.data, 1)
-    predicted = predicted.cpu()
+    predicted = predicted
     output = []
     for j in range(len(predicted)):
-        prediction = {"class": predicted.tolist()[j]}
+        prediction = {"class": state['classes'][predicted.tolist()[j]]}
         output.append(prediction)
     return output
 
